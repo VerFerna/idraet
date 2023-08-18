@@ -7,14 +7,10 @@
 @import "header";
 @import "productos";
 @import "index";
+@import "variables";
 
-.colorBtn{
-    background-color: lightseagreen;
-}
-.colorBtn:hover {
-    background-color: rgb(26, 151, 144);
-    color: floralwhite;
-}
+
+
 section{
     padding: 1rem;
 }

@@ -10,16 +10,18 @@
         padding-top: 2rem;
 
         span {
-            color: lightseagreen;
+            color: $color-fondo;
         }
     }
 
     .contact-wrapper {
         box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+
         >* {
             padding: 1em;
         }
     }
+
     .ulContacto {
         list-style: none;
         padding: 0;
@@ -47,24 +49,20 @@
         }
 
         form button {
-            width: 50%;
-            background: rgb(26, 151, 144);
-            border: 0;
+            width: 100%;
+            background: $color-boton;
+            border-radius: 5px;
             text-transform: uppercase;
             padding: 1em;
             padding: .7em;
             border: none;
             outline: 0;
-        }
-        form button:hover {
-            background-color: rgb(26, 151, 144);
-            color: floralwhite;
-        }
-        form button:focus {
-            background: rgb(26, 151, 144);
-            color: #fff;
-            transition: background-color 2s ease-out;
-            outline: 0;
+
+            :hover {
+                background-color: $color-boton-secundario;
+                color: $color-fuentes-secundario;
+                font-weight: bold;
+            }
         }
     }
 
@@ -75,15 +73,17 @@
         border: none;
         background: none;
         outline: 0;
-        color: black;
+        color: $color-fuentes;
         border-bottom: 1px solid black;
     }
+
     .contact-info {
         text-align: center;
         margin: 0 0 1rem 0;
         font-size: large;
     }
 }
+
 /* xl */
 @media(min-width: 700px) {
     .formularioContacto {
