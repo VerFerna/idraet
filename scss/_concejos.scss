@@ -1,10 +1,15 @@
-.card{
-.cardBody{
-    .textosVideos{
+.cardVid{
+    :hover {
+        background-color: $color-boton-secundario;
+        color: $color-fuentes-secundario;
         font-weight: bold;
-        text-align: center;
-    text-transform: uppercase;
     }
-}
-
-}
+    .cardBody{
+        
+        .textosVideos{
+            text-align: center;
+        }
+    }
+    
+    }
+    

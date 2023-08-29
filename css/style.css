@@ -4,9 +4,13 @@
   padding: 0;
 }
 
-body {
-  font-family: "roboto", sans-serif;
-  color: black;
+.cardVid :hover {
+  background-color: rgb(26, 151, 144);
+  color: floralwhite;
+  font-weight: bold;
+}
+.cardVid .cardBody .textosVideos {
+  text-align: center;
 }
 
 .formularioContacto .content {
@@ -48,24 +52,19 @@ body {
   grid-column: 1/3;
 }
 .formularioContacto .contact-form form button {
-  width: 50%;
-  background: rgb(26, 151, 144);
-  border: 0;
+  width: 100%;
+  background: lightseagreen;
+  border-radius: 5px;
   text-transform: uppercase;
   padding: 1em;
   padding: 0.7em;
   border: none;
   outline: 0;
 }
-.formularioContacto .contact-form form button:hover {
+.formularioContacto .contact-form form button :hover {
   background-color: rgb(26, 151, 144);
   color: floralwhite;
-}
-.formularioContacto .contact-form form button:focus {
-  background: rgb(26, 151, 144);
-  color: #fff;
-  transition: background-color 2s ease-out;
-  outline: 0;
+  font-weight: bold;
 }
 .formularioContacto form input,
 .formularioContacto form textarea {
@@ -74,7 +73,7 @@ body {
   border: none;
   background: none;
   outline: 0;
-  color: black;
+  color: #000000;
   border-bottom: 1px solid black;
 }
 .formularioContacto .contact-info {
@@ -102,6 +101,11 @@ body {
     font-size: small;
   }
 }
+body {
+  font-family: "roboto", sans-serif;
+  color: #000000;
+}
+
 .navbar {
   background-color: white;
   color: #000000;
@@ -127,11 +131,6 @@ body {
   color: floralwhite;
 }
 
-.card {
-  margin: 0.5rem;
-  border: none;
-}
-
 /* CAROUSEL */
 .imgCarousel {
   height: 300px;
@@ -141,9 +140,16 @@ body {
 .colorBtn {
   background-color: lightseagreen;
 }
-.colorBtn .colorBtn:hover {
+
+.colorBtn:hover {
   background-color: rgb(26, 151, 144);
   color: floralwhite;
+}
+
+.card {
+  margin: 0.5rem;
+  border: none;
+  transition: all 0.5s;
 }
 
 .colorBtn {
